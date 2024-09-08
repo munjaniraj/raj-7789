@@ -1,8 +1,363 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@tailwind variants;
 
+@font-face {
+  font-family: "ProximaNova";
+  src: url("/assets/fonts/Proxima-Nova-Font.woff2");
+}
+
+@font-face {
+  font-family: "Nunito";
+  src: url("/assets/fonts/Nunito-Regular.woff2");
+}
+
+html.has-scroll-smooth {
+  overflow: hidden;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+.wmde-markdown h1,
+.wmde-markdown h2 {
+  border-bottom: 0px !important;
+  padding-bottom: 0.3em !important;
+}
+
+section .wmde-markdown table tr:nth-child(2n) {
+  background-color: white ;
+}
+section .wmde-markdown table tr{
+  background-color: white ;
+}
+
+.wmde-markdown ul {
+  list-style: disc !important;
+}
+.wmde-markdown a {
+  color: #60AAF6 !important;
+}
+
+input[type="file"] {
+  text-align: left;
+  padding: 0.4rem;
+}
+
+input[type="file"]::-webkit-file-upload-button {
+  width: 7rem;
+  margin-right: 0;
+  float: right;
+  border-radius: 0.25rem;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  background: transparent;
+}
+
+.count-container {
+  text-align: end; /* Align content to the end */
+  display: flex; /* Make children align in a row */
+  justify-content: flex-end; /* Align children to the end */
+}
+
+.count-container > div {
+  /* Apply styles to each count item */
+  margin-left: 10px; /* Add some space between count items */
+  /* Add any additional styles you need */
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+  font-family: "ProximaNova";
+}
+
+/* Hide scrollbar for Chrome, Safari, and Opera */
+/* ::-webkit-scrollbar {
+  display: none !important;
+} */
+
+/* Hide scrollbar for IE, Edge, and Firefox */
 body {
-  text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+  color: #000000de;
+  overflow-x: hidden;
+}
+
+.home-ourservice-slick-dots {
+  bottom: -2.5rem !important;
+  width: auto !important;
+  right: 0;
+  left: 0;
+}
+
+.client-testimonials-slick-dots {
+  bottom: 2rem !important;
+  width: auto !important;
+  right: 0;
+  left: 0;
+}
+
+.slick-dots li button:before {
+  color: #60AAF6 !important;
+  font-size: 10px !important;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #60AAF6 !important;
+  font-size: 15px !important;
+}
+
+.react-tel-input {
+  padding: 0.5rem 0 0 0 !important;
+}
+
+.react-tel-input .form-control {
+  background: none !important;
+  border: 0 !important;
+  border-bottom: 1px solid rgb(0 0 0 / 0.2) !important;
+  width: 100% !important;
+  border-radius: 0 !important;
+  height: 34px !important;
+}
+
+@media (min-width: 1024px) {
+  .react-tel-input .form-control {
+    background: none !important;
+    border: 0 !important;
+    border-bottom: 1px solid white !important;
+    width: 100% !important;
+    border-radius: 0 !important;
+  }
+  .react-tel-input .form-control-white {
+    /* border-bottom: 1px solid rgb(0 0 0 / 0.2) !important; */
+  }
+}
+
+.react-tel-input .flag-dropdown {
+  background: none !important;
+  border: none !important;
+  margin-top: 6px !important;
+}
+
+.react-tel-input .selected-flag:hover,
+.react-tel-input .selected-flag:focus {
+  background: none !important;
+}
+
+.react-tel-input .flag-dropdown.open .selected-flag {
+  background: none !important;
+  margin-top: 6px !important;
+}
+
+.react-tel-input .country-list .country:hover {
+  color: black;
+}
+
+.react-tel-input .country-list .country.highlight .country-name {
+  color: black !important;
+}
+.react-tel-input .country-list .country-name {
+  color: black !important;
+}
+
+@layer components {
+  .portfolio-rtl {
+    direction: rtl;
+    @apply text-end;
+  }
+  .portfolio-rtl span {
+    @apply self-end;
+  }
+  .portfolio-rtl .relative .tab {
+    @apply xl:right-0 xl:translate-x-1/2;
+  }
+
+  .portfolio-rtl .rtl-text {
+    direction: initial;
+    @apply text-start;
+  }
+
+  .portfolio-ltr {
+    direction: ltr;
+  }
+  .portfolio-ltr .relative .tab {
+    @apply xl:left-0 xl:-translate-x-1/2;
+  }
+}
+
+.pulseButton {
+  background: #60AAF6;
+  box-shadow: 0 0 0 0 #60AAF6;
+  animation: pulse 2.5s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.95);
+  }
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 20px rgba(90, 153, 212, 0);
+  }
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(90, 153, 212, 0);
+  }
+}
+
+.carousel-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s ease;
+  transform: scale(0.8);
+}
+
+.slick-center .carousel-item {
+  transform: scale(1.3); /* Zoom effect on center slide */
+}
+
+.no-css > ul {
+  list-style: unset;
+  margin: unset;
+  padding: revert;
+}
+
+.no-css > ul > li::marker {
+  font-size: 1.4rem;
+  line-height: 2rem;
+}
+
+.challengeContent::-webkit-scrollbar {
+  width: 0; /* Remove scrollbar space */
+  background: transparent; /* Optional: just make scrollbar invisible */
+}
+
+@media screen and (max-width: 496px) {
+  .tabImage {
+    min-height: 460px !important;
+    max-width: 380px !important;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .challengeContent {
+    margin-top: 30px !important;
+  }
+}
+@media screen and (max-width: 392px) {
+  .tabImage {
+    min-height: 420px !important;
+    max-width: 360px !important;
+  }
+}
+
+@media screen and (min-width: 640px) and (max-width: 767px) {
+  .FlaskSlider {
+    left: 100px !important;
+  }
+  .FlaskSliderText {
+    left: 16% !important;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 639px) {
+  .FlaskSlider {
+    left: 45px !important;
+  }
+  .FlaskSliderText {
+    left: 10% !important;
+  }
+}
+@media screen and (min-width: 100px) and (max-width: 499px) {
+  .FlaskSlider {
+    left: 28px !important;
+  }
+  .FlaskSliderText {
+    left: 8% !important;
+    right: 3% !important;
+    margin-top: -17px !important;
+  }
+  .FlaskImage {
+    width: 90px !important;
+  }
+  .FlaskTextH2 {
+    font-size: 16px !important;
+  }
+  .FlaskTextP {
+    font-size: 16px !important;
+  }
+}
+@media screen and (min-width: 1900px) {
+  .HelpBusiness {
+    max-width: 1400px !important;
+    margin: auto !important;
+  }
+  .HelpImage {
+    max-width: 650px !important;
+    max-height: 650px !important;
+    margin-right: 60px !important;
+  }
+  .RodMap {
+    margin-left: -178px !important;
+  }
+  .RodMapImage {
+    margin-left: 445px !important;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .tabImage {
+    min-height: 400px !important;
+    max-width: 350px !important;
+  }
+}
+@media screen and (max-width: 320px) {
+  .tabImage {
+    min-height: 320px !important;
+    max-width: 280px !important;
+  }
+}
+@media screen and (min-width: 1590px) and (max-width: 1690px) {
+  .tabImage {
+    min-height: 550px !important;
+    max-width: 350px !important;
+  }
+  .mainImage {
+    min-height: 850px !important;
+    max-width: 800px !important;
+  }
+}
+
+@media screen and (min-width: 1490px) and (max-width: 1590px) {
+  .tabImage {
+    min-height: 450px !important;
+    max-width: 350px !important;
+  }
+  .mainImage {
+    min-height: 750px !important;
+    max-width: 700px !important;
+  }
+}
+@media screen and (min-width: 1380px) and (max-width: 1490px) {
+  .tabImage {
+    min-height: 400px !important;
+    max-width: 300px !important;
+  }
+  .mainImage {
+    min-height: 650px !important;
+    max-width: 600px !important;
+  }
+}
+@media screen and (min-width: 1280px) and (max-width: 1380px) {
+  .tabImage {
+    min-height: 380px !important;
+    max-width: 270px !important;
+  }
+  .mainImage {
+    min-height: 600px !important;
+    max-width: 550px !important;
+  }
 }

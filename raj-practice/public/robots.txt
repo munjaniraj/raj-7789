@@ -1,0 +1,33 @@
+User-agent: *
+Allow: /
+Disallow: /thank-you
+
+Disallow: /case-study/
+Disallow: /contact-us? 
+Disallow: /career?
+Disallow: /services/software-development-company?
+Disallow: /services/blockchain-development-company?
+Disallow: /services/ui-ux-design-services?
+Disallow: /services/web-development-company?
+Disallow: /services/mobile-app-development-company?
+Disallow: /services/staff-augmentation?
+Disallow: /hire/hire-reactjs-developers?
+Disallow: /hire/hire-nextjs-developers?
+Disallow: /hire/hire-vuejs-developers?
+Disallow: /hire/hire-angular-developers?
+Disallow: /hire/hire-python-developers?
+Disallow: /hire/hire-django-developers?
+Disallow: /hire/hire-flask-developers?
+Disallow: /hire/hire-nodejs-developers?
+Disallow: /hire/hire-full-stack-developers?
+Disallow: /hire/hire-blockchain-developers?
+Disallow: /hire/hire-mern-stack-developers?
+Disallow: /hire/hire-mean-stack-developers?
+Disallow: /hire/hire-flutter-developers?
+Disallow: /hire/hire-flutter-developers?
+Disallow: /hire/hire-android-developers?
+Disallow: /hire/hire-ios-developers?
+Disallow: /hire/hire-software-developers?
+Disallow: /hire/hire-ui-ux-designers?
+
+sitemap: https://dharmafotech.com/sitemap.xml

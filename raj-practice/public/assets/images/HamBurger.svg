@@ -1,0 +1,40 @@
+<svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="21" height="20" fill="#1E1E1E"/>
+<g id="Home">
+<rect width="375" height="812" transform="translate(-335 -59)" fill="white"/>
+<g id="iPhone 13 mini - 6" clip-path="url(#clip0_292_3972)">
+<rect width="375" height="7012" transform="translate(-334.75 -59)" fill="white"/>
+<g id="Frame 51904" clip-path="url(#clip1_292_3972)">
+<rect width="375" height="94" transform="translate(-334.75 -59)" fill="white"/>
+<g id="Menubar" clip-path="url(#clip2_292_3972)">
+<rect width="375" height="50" transform="translate(-334.75 -15)" fill="white"/>
+<g id="Scrolled">
+<rect width="375" height="250" transform="translate(-334.75 -15)" fill="white"/>
+<g id="Frame 51420">
+<rect width="375" height="50" transform="translate(-334.75 -15)" fill="white"/>
+<g id="svgexport-15 (24) 1" clip-path="url(#clip3_292_3972)">
+<g id="Group">
+<path id="Vector" d="M5.5 4C5.5 3.44773 5.94773 3 6.5 3H19.5C20.0523 3 20.5 3.44773 20.5 4C20.5 4.55227 20.0523 5 19.5 5H6.5C5.94773 5 5.5 4.55223 5.5 4ZM19.5 9H1.5C0.947734 9 0.5 9.44777 0.5 10C0.5 10.5523 0.947734 11 1.5 11H19.5C20.0523 11 20.5 10.5523 20.5 10C20.5 9.44777 20.0523 9 19.5 9ZM19.5 15H10.5C9.94777 15 9.5 15.4477 9.5 16C9.5 16.5522 9.94777 17 10.5 17H19.5C20.0523 17 20.5 16.5522 20.5 16C20.5 15.4477 20.0523 15 19.5 15Z" fill="black"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_292_3972">
+<rect width="375" height="7012" fill="white" transform="translate(-334.75 -59)"/>
+</clipPath>
+<clipPath id="clip1_292_3972">
+<rect width="375" height="94" fill="white" transform="translate(-334.75 -59)"/>
+</clipPath>
+<clipPath id="clip2_292_3972">
+<rect width="375" height="50" fill="white" transform="translate(-334.75 -15)"/>
+</clipPath>
+<clipPath id="clip3_292_3972">
+<rect width="20" height="20" fill="white" transform="translate(0.5)"/>
+</clipPath>
+</defs>
+</svg>

@@ -1,0 +1,16 @@
+.navbar_nav_items li:after {
+    background-color: #60AAF6;
+    bottom: -5px;
+    content: "";
+    height: 2px;
+    left: 0;
+    position: absolute;
+    transition: .4s;
+    width: 0;
+}
+
+.navbar_nav_items li:hover:after {
+    color: #60AAF6;
+    transition: .4s;
+    width: 100%;
+}

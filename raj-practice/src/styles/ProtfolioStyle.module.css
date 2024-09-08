@@ -1,0 +1,152 @@
+.portfolio_slide {
+  position: relative;
+  z-index: 0;
+  margin-top: 50px;
+  width: 1000px;
+  height: 495px;
+  padding: 50px;
+}
+.item {
+  width: 350px;
+  background-position: 50% 50%;
+  display: inline-block;
+  transition: 0.8s;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  z-index: 5000;
+  top: 50%;
+  transform: translate(0, -50%);
+  border-radius: 20px;
+  /* box-shadow: 0 10px 50px #505050; */
+  left: calc(50% + -700px);
+}
+.item:nth-child(1){
+  z-index: -1;
+}
+.item:nth-child(2) {
+  left: 0;
+  top: 0;
+  z-index: 1;
+  transform: translate(0, 0);
+  border-radius: 0;
+  width: 100%;
+  height: 100%;
+  /* box-shadow: 0 10px 50px #505050; */
+  /* box-shadow: none; */
+}
+.item:nth-child(3) {
+  left: calc(50% + 365px);
+  z-index: 1;
+}
+.item:nth-child(n + 4) {
+  left: calc(50% + 660px);
+  opacity: 0;
+}
+.item button {
+  padding: 10px 20px;
+  border: none;
+  opacity: 0;
+  animation: showcontent 1s ease-in 0.6s 1 forwards;
+}
+@keyframes showcontent {
+  from {
+    opacity: 0;
+    transform: translate(0, 100px);
+    filter: blur(33px);
+  }
+  to {
+    opacity: 1;
+    transform: translate(0, 0);
+    filter: blur(0);
+  }
+}
+.buttons {
+  position: absolute;
+  bottom: 30px;
+  z-index: 222222;
+  text-align: center;
+  width: 100%;
+  display: flex;
+  gap: 0.5em;
+  justify-content: center;
+}
+.buttons .button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  transition: 0.5s;
+}
+
+@media (max-width: 1300px) {
+  .portfolio_slide {
+    width: 800px;
+    height: 395px;
+  }
+  .item {
+    left: calc(50% + -510px);
+  }
+  .item:nth-child(3) {
+    left: calc(50% + 300px);
+  }
+  .item:nth-child(n + 4) {
+    left: calc(50% + 300px);
+  }
+}
+
+@media (max-width: 1020px) {
+  .portfolio_slide {
+    width: auto;
+    height: 360px;
+  }
+  .item {
+    width: auto;
+    height: auto;
+    top: 0;
+    transform: none;
+  }
+  .item:nth-child(1) {
+    display: none;
+    opacity: 0;
+  }
+  .item:nth-child(3) {
+    left: 0;
+    opacity: 0;
+  }
+  .item:nth-child(n + 4) {
+    left: 0;
+    opacity: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .portfolio_slide {
+    width: auto;
+    height: 300px;
+  }
+  .buttons {
+    position: static;
+    margin-top: 10px;
+  }
+  .buttons .button {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+@media (max-width: 639px) {
+  .portfolio_slide {
+    width: auto;
+    height: 230px;
+  }
+  .buttons .button {
+    width: 25px;
+    height: 25px;
+  }
+}
+@media (max-width: 499px) {
+  .portfolio_slide {
+    width: auto;
+    height: 160px;
+  }
+}
